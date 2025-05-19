@@ -575,11 +575,11 @@ COPY public.django_session (session_key, session_data, expire_date) FROM stdin;
 --
 
 COPY public.store_cart (id, created_at, user_id) FROM stdin;
-1	2025-05-19 20:06:32.511398+05	1
-2	2025-05-19 20:06:32.519158+05	2
-3	2025-05-19 20:06:32.522509+05	3
-4	2025-05-19 20:06:32.526209+05	4
-5	2025-05-19 20:06:32.52884+05	5
+1	2025-05-19 23:24:42.751018+05	1
+2	2025-05-19 23:24:42.762047+05	2
+3	2025-05-19 23:24:42.766536+05	3
+4	2025-05-19 23:24:42.77944+05	4
+5	2025-05-19 23:24:42.783236+05	5
 \.
 
 
@@ -588,21 +588,21 @@ COPY public.store_cart (id, created_at, user_id) FROM stdin;
 --
 
 COPY public.store_cartitem (id, quantity, cart_id, product_id) FROM stdin;
-1	1	1	1
-2	3	1	4
-3	2	1	3
-4	3	2	3
-5	2	2	7
-6	3	2	6
-7	1	3	8
-8	1	3	2
-9	2	3	4
-10	1	4	8
-11	2	4	7
-12	2	4	1
-13	3	5	5
-14	1	5	8
-15	1	5	3
+1	2	1	1
+2	2	1	7
+3	1	1	4
+4	1	2	6
+5	3	2	3
+6	2	2	5
+7	3	3	5
+8	3	3	4
+9	3	3	6
+10	3	4	6
+11	2	4	2
+12	1	4	4
+13	3	5	2
+14	3	5	8
+15	2	5	7
 \.
 
 
@@ -627,14 +627,14 @@ COPY public.store_orderitem (id, quantity, unit_price, order_id, product_id) FRO
 --
 
 COPY public.store_product (id, name, description, price, stock, image, created_at) FROM stdin;
-1	Sierra Trail Sunglasses	Classic outdoor frame with polarized lenses.	129.99	30	sierra.jpg	2025-05-19 20:06:32.500367+05
-2	Urban Voyager Shades	Stylish city-ready sunglasses with UV protection.	149.99	20	voyager.jpg	2025-05-19 20:06:32.504221+05
-3	Alpine Edge Polarized	Built for high-altitude adventures.	179.99	15	alpine.jpg	2025-05-19 20:06:32.504779+05
-4	Beach Breeze Sunglasses	Comfortable beach sunglasses for relaxation.	99.99	40	beach.jpg	2025-05-19 20:06:32.505293+05
-5	Urban Explorer Shades	Stylish city sunglasses for urban adventures.	129.99	25	explorer.jpg	2025-05-19 20:06:32.505778+05
-6	Mountain Trekker Sunglasses	Durable sunglasses for mountain trekking.	159.99	10	trekker.jpg	2025-05-19 20:06:32.506544+05
-7	Desert Mirage Shades	Lightweight sunglasses for desert adventures.	119.99	35	mirage.jpg	2025-05-19 20:06:32.507204+05
-8	Coastal Cruiser Sunglasses	Perfect for coastal drives and beach days.	139.99	20	cruiser.jpg	2025-05-19 20:06:32.508013+05
+1	Sierra Trail Sunglasses	Classic outdoor frame with polarized lenses.	129.99	30	sierra.jpg	2025-05-19 23:24:42.742434+05
+2	Urban Voyager Shades	Stylish city-ready sunglasses with UV protection.	149.99	20	voyager.jpg	2025-05-19 23:24:42.745725+05
+3	Alpine Edge Polarized	Built for high-altitude adventures.	179.99	15	alpine.jpg	2025-05-19 23:24:42.746249+05
+4	Beach Breeze Sunglasses	Comfortable beach sunglasses for relaxation.	99.99	40	beach.jpg	2025-05-19 23:24:42.746803+05
+5	Urban Explorer Shades	Stylish city sunglasses for urban adventures.	129.99	25	explorer.jpg	2025-05-19 23:24:42.747342+05
+6	Mountain Trekker Sunglasses	Durable sunglasses for mountain trekking.	159.99	10	trekker.jpg	2025-05-19 23:24:42.747863+05
+7	Desert Mirage Shades	Lightweight sunglasses for desert adventures.	119.99	35	mirage.jpg	2025-05-19 23:24:42.748352+05
+8	Coastal Cruiser Sunglasses	Perfect for coastal drives and beach days.	139.99	20	cruiser.jpg	2025-05-19 23:24:42.748834+05
 \.
 
 
@@ -643,11 +643,12 @@ COPY public.store_product (id, name, description, price, stock, image, created_a
 --
 
 COPY public.store_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, is_admin) FROM stdin;
-1	pbkdf2_sha256$1000000$88mSnMDDSnVqKV2dKLeqye$JMrKWAfK5U8QUSDt099iT5wFPyxeExgDR/zKqMZ7pfY=	\N	f	user0			user0@example.com	f	t	2025-05-19 20:06:31.823226+05	f
-2	pbkdf2_sha256$1000000$skfLkZYSUI5PDqyWVOcaue$Ooon6tgYwT9PLXrpMYyUPII05QSuHgoToQGfjB+FjW0=	\N	f	user1			user1@example.com	f	t	2025-05-19 20:06:31.953887+05	f
-3	pbkdf2_sha256$1000000$WBEqs1nHZMEQ1DyrywFAXR$GBxMl56ngNlSf6iGjlDJ4ucj+AV8beOubqvIfYSiyxE=	\N	f	user2			user2@example.com	f	t	2025-05-19 20:06:32.086928+05	f
-4	pbkdf2_sha256$1000000$Ib2Bzlh37e3FyuMT0Irz7Z$ImVyduwQlD0canulEuxTj4EFME1pEhE/bOe9dIqtgdY=	\N	f	user3			user3@example.com	f	t	2025-05-19 20:06:32.233895+05	f
-5	pbkdf2_sha256$1000000$6F2XSRK01J2OZL3bNSAv4u$FnIhfq3BSNnztm30qFe+mqsz8k7z0CFhGNCIK0iA6KI=	\N	f	user4			user4@example.com	f	t	2025-05-19 20:06:32.361839+05	f
+1	pbkdf2_sha256$1000000$kPsdpmRPLZbC4HR2epLPmy$7JsMSIXa5CwkU23cmvYlm/ICR1xuu7Q1mNx1M6C8Fik=	\N	f	user0			user0@example.com	f	t	2025-05-19 23:24:42.138174+05	f
+2	pbkdf2_sha256$1000000$bMIM36i0GDlg0PGBz09RDv$elRm3Fez2xPYKrtdXwgrBrMwrFSXyD0IESuVegY50v0=	\N	f	user1			user1@example.com	f	t	2025-05-19 23:24:42.259874+05	f
+3	pbkdf2_sha256$1000000$ptUVQOrUPqKwzONjeFNTBK$XBEee0Ry76rzrovlugsdzZo+inHH+pI8XqrU5qeUZN0=	\N	f	user2			user2@example.com	f	t	2025-05-19 23:24:42.383612+05	f
+4	pbkdf2_sha256$1000000$tGU1it3L6Yt5li5nIMxbQh$eXikQoHDbGa9Tz5/GL8+UIQPMYLwdMgypPlNLq/tnb4=	\N	f	user3			user3@example.com	f	t	2025-05-19 23:24:42.507312+05	f
+5	pbkdf2_sha256$1000000$NctFK61Z8X1JinI6Oq3xqU$IKVYDaPFzAbINGtZ02FUhp1RJbO1GK42cANWM91a2NE=	\N	f	user4			user4@example.com	f	t	2025-05-19 23:24:42.625413+05	f
+6	pbkdf2_sha256$1000000$CCkzRQEKhxjVNpmKaET9Pb$b6UiGQCIU8184abQTWTUCglb+NzHUkixP62vhRavI74=	\N	t	admin			admin@email.com	t	t	2025-05-19 23:26:05.219009+05	f
 \.
 
 
@@ -755,7 +756,7 @@ SELECT pg_catalog.setval('public.store_user_groups_id_seq', 1, false);
 -- Name: store_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.store_user_id_seq', 5, true);
+SELECT pg_catalog.setval('public.store_user_id_seq', 6, true);
 
 
 --
