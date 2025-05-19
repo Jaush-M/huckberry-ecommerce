@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Checkout Success - Huckberry
+{% endblock %}
+
+{% block content %}
+  <div class="text-center py-12">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-6 text-green-600" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 6L9 17l-5-5" />
+    </svg>
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">Thank you for your purchase!</h1>
+    <p class="text-gray-600 mb-6">
+      Your order <span class="font-medium text-gray-800">#{{ order.id }}</span> has been placed successfully.
+    </p>
+    <a href="{% url 'home' %}" class="inline-block px-6 py-2 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg transition">Continue Shopping</a>
+  </div>
+{% endblock %}

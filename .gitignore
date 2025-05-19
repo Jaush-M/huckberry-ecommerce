@@ -1,0 +1,55 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual Environment
+.venv/
+venv/
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+
+# Environment Variables
+.env
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vite/
+build/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# VSCode
+.vscode/
+
+# Coverage & testing
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+coverage.xml
+
+# Docker
+*.pid
+*.db
+*.sqlite3
+__pycache__/
+docker-compose.override.yml
+
+# Logs
+*.log
+*.log.*
+
