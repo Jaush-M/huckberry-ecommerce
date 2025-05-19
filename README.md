@@ -42,48 +42,50 @@
 
 ## ⚡ **Features**
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3>🛒 Shopping Experience</h3>
-      <ul>
-        <li>Responsive product catalog</li>
-        <li>Dynamic product filtering</li>
-        <li>Secure checkout process</li>
-        <li>Order history & tracking</li>
-      </ul>
-    </td>
-    <td width="50%">
-      <h3>👤 User Management</h3>
-      <ul>
-        <li>User registration & authentication</li>
-        <li>Profile customization</li>
-        <li>Wishlist functionality</li>
-        <li>Saved payment methods</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>🔧 Admin Controls</h3>
-      <ul>
-        <li>Product management</li>
-        <li>Inventory tracking</li>
-        <li>Order processing</li>
-        <li>Customer insights</li>
-      </ul>
-    </td>
-    <td width="50%">
-      <h3>🎨 Design</h3>
-      <ul>
-        <li>Modern UI with Tailwind CSS v4</li>
-        <li>Responsive on all devices</li>
-        <li>Custom animations</li>
-        <li>Accessible design patterns</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <table>
+    <tr>
+      <td width="50%">
+        <h3>🛒 Shopping Experience</h3>
+        <ul>
+          <li>Responsive product catalog</li>
+          <li>Dynamic product filtering</li>
+          <li>Secure checkout process</li>
+          <li>Order history & tracking</li>
+        </ul>
+      </td>
+      <td width="50%">
+        <h3>👤 User Management</h3>
+        <ul>
+          <li>User registration & authentication</li>
+          <li>Profile customization</li>
+          <li>Wishlist functionality</li>
+          <li>Saved payment methods</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%">
+        <h3>🔧 Admin Controls</h3>
+        <ul>
+          <li>Product management</li>
+          <li>Inventory tracking</li>
+          <li>Order processing</li>
+          <li>Customer insights</li>
+        </ul>
+      </td>
+      <td width="50%">
+        <h3>🎨 Design</h3>
+        <ul>
+          <li>Modern UI with Tailwind CSS v4</li>
+          <li>Responsive on all devices</li>
+          <li>Custom animations</li>
+          <li>Accessible design patterns</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
